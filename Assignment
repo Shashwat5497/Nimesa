@@ -1,0 +1,65 @@
+Please find the assignment attached below for your reference.
+
+Your task is build an spring-boot based application which will communicate with AWS cloud
+services 
+Steps to follow:-
+Add AWS SDK for Java as dependency in spring boot application.
+Use the provided credentials at the end of the document to connect the Nimesa AWS account.
+Call AWS API to list cloud resources.
+
+Java Assignment
+
+Build a Spring Boot project that exposes the following REST APIs
+
+1. DiscoverServices(List<String> services)
+
+Input: Services are EC2 and S3
+Output: JobId
+
+This method should asynchronously discover EC2 instances in the Mumbai Region in one thread and S3 buckets in another thread and persist the result in DB
+
+2. GetJobResult(Jobid)
+
+Input: JobId
+Output: Success or In Progress or Failed
+
+This method should return the Job Status for the given ID
+
+3. GetDiscoveryResult(String Service)
+
+Input: Service Name
+Output: For S3 - List of S3 Buckets
+For EC2 - List of Instance IDs
+
+4. GetS3BucketObjects(String BucketName)
+
+Input: S3 bucket name
+Output: JobId
+
+Discover all the File Names in the S3 bucket and persist in the DB. Return the JobID as it may take time for the job the complete
+
+5. GetS3BucketObjectCount(String BucketName)
+
+Input: S3 bucket name
+Output: Count
+
+Get the result from the DB
+
+6. GetS3BucketObjectlike(String BucketName, String Pattern)
+
+Input: S3 bucket name
+Output: List of file names matching the pattern
+
+Please use the credentials in the document attached for the assignment
+
+DISCLAIMER: Do not share the credentials with any other person.
+
+Get the result from the DB
+
+Please share the Git project and code output of the APIs 
+
+NOTE: Please provide sql create queries and the db configuration file for the application and create a proper documentation for your application
+
+Credential Document link :- Credentials.pdf
+
+Triple click Here to view password      0&Y@y9@!TDCJEbnl%W1pbQ#fAxqYTVm0
